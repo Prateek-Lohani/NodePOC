@@ -1,0 +1,1 @@
+To run the node poc run "node app.js".
