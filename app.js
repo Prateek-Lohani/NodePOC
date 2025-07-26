@@ -1,6 +1,7 @@
-import { courseName,sum } from './sum.js';
+const {sum}=require('./calculate/sum')
+const {multiply}=require('./calculate/multiply')
 
-console.log('app');
+console.log('app')
 
-sum(5,10)  // using sum function from the sum module
-console.log(courseName)
+sum(5,15)
+multiply(5,15)
