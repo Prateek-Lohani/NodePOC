@@ -1,5 +1,4 @@
-const {sum}=require('./calculate/sum')
-const {multiply}=require('./calculate/multiply')
+const {sum , multiply} = require('./calculate')
 
 console.log('app')
 
