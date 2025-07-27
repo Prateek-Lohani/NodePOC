@@ -1,11 +1,7 @@
-const {sum , multiply} = require('./calculate')
+const crypto=require('node:crypto')
 
-const data = require('./data.json')
-const util= require('node:util')
+const hash = crypto.createHash('sha256') // creating Hash
+hash.update('Hello') // update the hash with data
+const digest=hash.digest('hex'); // calculate the digest/transformed data
 
-console.log('app')
-console.log(data.map((item)=>item.title))
-console.log(util)
-
-sum(5,15)
-multiply(5,15)
+console.log('SHA-256 Hash:', digest);
