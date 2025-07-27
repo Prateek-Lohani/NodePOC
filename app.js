@@ -9,8 +9,21 @@ const digest='sha512'; // specifies hash function
 crypto.pbkdf2(password,salt,iterations,keylen,digest,(err,derivedKey)=>{
     if(err) throw err;
 
+    const hashedPassword=derivedKey.toString('hex')
     console.log('User Password:',password)
     console.log('Salt:',salt);
-    console.log('Hashed Password:', derivedKey.toString('hex')); // this is the hashed password that you can store in your database
+    console.log('Hashed Password:', hashedPassword); // this is the hashed password that you can store in your database
+
+   verifyPassword('SomeSecurePassword',hashedPassword,salt)
+
+
 })
 
+function verifyPassword(inputPassword, hashedPassword, salt) {
+  crypto.pbkdf2(inputPassword, salt, 1000000, 64, 'sha512', (err, derivedKey) => {
+    if (err) throw err;
+
+    const isMatch = derivedKey.toString('hex') === hashedPassword;
+    console.log('Password match:', isMatch);
+  });
+}
