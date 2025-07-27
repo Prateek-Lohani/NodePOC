@@ -1,7 +1,14 @@
 const crypto=require('node:crypto')
+const data='This will be encrypted by crypto'
 
-const hash = crypto.createHash('sha256') // creating Hash
-hash.update('Hello') // update the hash with data
-const digest=hash.digest('hex'); // calculate the digest/transformed data
+const md5=crypto.createHash('md5').update(data).digest('hex') // not recommended as cryptographically weak
+console.log('MD5:',md5)
 
-console.log('SHA-256 Hash:', digest);
+const sha1=crypto.createHash('sha1').update(data).digest('hex') // not recommended as cryptographically weak
+console.log('SHA1:',sha1)
+
+const sha256=crypto.createHash('sha256').update(data).digest('hex') 
+console.log('SHA256:',sha256)
+
+const sha512=crypto.createHash('sha512').update(data).digest('hex') 
+console.log('SHA512:',sha512)
