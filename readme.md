@@ -153,10 +153,6 @@ Each commit in this repository includes detailed markdown documentation in the `
 - [Crypto Module API Reference](https://nodejs.org/api/crypto.html)
 - [OWASP Password Storage Guidelines](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
 
-## License
-
-This project is provided as-is for educational purposes.
-
 ---
 
 **Note**: This is a learning-focused proof of concept. Code examples prioritize clarity and educational value over production-readiness.
