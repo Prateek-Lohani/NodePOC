@@ -1,84 +1,27 @@
-# Node.js POC – Learn by Building
+# Node.js Learning Project
 
-This project is a **proof of concept (POC)** for understanding Node.js from the ground up.
+A structured proof-of-concept repository designed to demonstrate core Node.js concepts through progressive, hands-on examples.
 
-## 🚀 What's Inside
+## Overview
 
-- Clean, modular file structure
-- Separation of concerns using multiple files and folders
-- Usage of `require` and `module.exports` for modularization
-- Hands-on examples of Node.js built-in modules (crypto, util, path, etc.)
-- JSON file handling
-- ES Modules vs CommonJS understanding
-- Password hashing and security best practices
-- Minimal setup — no external libraries or frameworks
+This project provides a systematic approach to learning Node.js fundamentals, emphasizing modularity, built-in APIs, and security best practices. Each concept is introduced incrementally through well-documented commits, making it ideal for developers new to Node.js or those seeking to strengthen their foundational understanding.
 
-## 📚 Learning Path (Commit History)
+## Features
 
-This project follows a step-by-step learning approach. Each commit introduces a new concept and has a detailed explanation in the `commits/` folder.
+- Modular architecture demonstrating separation of concerns
+- Progressive learning path with detailed commit documentation
+- Comprehensive examples of Node.js built-in modules
+- Security-focused password hashing implementations
+- Support for both CommonJS and ES Modules
+- Zero external dependencies for core functionality
 
-All commits are documented in individual markdown files located in the `commits/` directory. Each file contains:
-- Commit title and hash
-- Description of what was demonstrated
-- Concept learned
-- Code examples
-- Key takeaways
-
-### Quick Reference Table
-
-| Commit | Description | Concept Learned |
-|--------|-------------|-----------------|
-| `f0502d9` | Creating two modules and requirement of one module into main module | Basic module creation with `require` and `module.exports` |
-| `65a76d8` | Accessing variables/functions of a module into different module | Exporting and importing functions between modules |
-| `138d7f0` | Accessing multiple variables/functions from a module to another module | Multiple exports and destructuring imports |
-| `dc0958f` | Using ES Module in place of the default commonJS module | ES Modules (`import`/`export` vs CommonJS) |
-| `7513101` | Nested Modules | Organizing code in subdirectories |
-| `7c46761` | Another cleaner way to deal with nested modules | Better module organization patterns |
-| `90c41db` | Using JSON file | Reading and writing JSON files in Node.js |
-| `d5d1a31` | Inbuilt node.js module (util module) | Using Node.js built-in utility modules |
-| `0a55e01` | Hashing using Crypto Module | Basic password hashing with crypto |
-| `23fb969` | Common Hash Algorithms | Understanding MD5, SHA1, SHA256, SHA512 |
-| `f9862da` | How to create a hashed password to securely save it in database | Secure password storage with PBKDF2 |
-| `0013b79` | Verifying password | Password verification (recommends bcrypt for production) |
-
-### Detailed Commit Documentation
-
-For detailed information about each commit, see the files in the `commits/` folder:
-- `commits/f0502d9_creating_two_modules.md`
-- `commits/65a76d8_accessing_module_functions.md`
-- `commits/138d7f0_accessing_multiple_variables.md`
-- `commits/dc0958f_es_module.md`
-- `commits/7513101_nested_modules.md`
-- `commits/7c46761_nested_modules_cleaner_way.md`
-- `commits/90c41db_using_json_file.md`
-- `commits/d5d1a31_inbuilt_node_modules.md`
-- `commits/0a55e01_hashing_using_crypto.md`
-- `commits/23fb969_common_hash_algorithms.md`
-- `commits/f9862da_hashed_password.md`
-- `commits/0013b79_verifying_password.md`
-- `commits/path_module_basics.md`
-
-## 🧠 Why This Exists
-
-This is meant to be a **learning-focused** Node.js setup.  
-Each commit introduces a small concept, helping you build a mental model of how Node.js works under the hood.
-
-Use this repo to:
-
-- Understand module resolution (`require`)
-- Explore how CommonJS modules are structured
-- See how Node handles file execution order
-- Learn about Node.js built-in modules (crypto, util, path, fs, etc.)
-- Understand password hashing and security best practices
-- Practice working with a minimal Node environment
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 nodejsPoc/
-├── app.js                  # Main entry point (password hashing examples)
-├── data.json               # Sample JSON data file
-├── commits/                # Detailed commit documentation (learning guide)
+├── app.js                  # Application entry point
+├── data.json               # Sample data file
+├── commits/                # Commit-by-commit learning documentation
 │   ├── f0502d9_creating_two_modules.md
 │   ├── 65a76d8_accessing_module_functions.md
 │   ├── 138d7f0_accessing_multiple_variables.md
@@ -90,64 +33,130 @@ nodejsPoc/
 │   ├── 0a55e01_hashing_using_crypto.md
 │   ├── 23fb969_common_hash_algorithms.md
 │   ├── f9862da_hashed_password.md
-│   └── 0013b79_verifying_password.md
-├── calculate/              # Module example directory
-│   ├── index.js            # Main module exporter
-│   ├── sum.js              # Sum function
-│   └── multiply.js         # Multiply function
-└── PathModule/             # Path module examples
-    └── app.js              # Path module usage
+│   ├── 0013b79_verifying_password.md
+│   └── path_module_basics.md
+├── calculate/              # Example module demonstrating code organization
+│   ├── index.js
+│   ├── sum.js
+│   └── multiply.js
+└── PathModule/             # Path module demonstration
+    └── app.js
 ```
 
-## 🛠️ How to Run
+## Learning Path
 
-1. Clone the repo:
+This repository follows a structured learning approach with each commit introducing a specific concept. Comprehensive documentation for each step is available in the `commits/` directory.
 
-   
+### Curriculum Overview
+
+| Commit | Topic | Key Concepts |
+|--------|-------|--------------|
+| `f0502d9` | Module Creation | `require()`, `module.exports` |
+| `65a76d8` | Module Interaction | Exporting and importing functions |
+| `138d7f0` | Multiple Exports | Destructuring, named exports |
+| `dc0958f` | ES Modules | `import`/`export` syntax, module types |
+| `7513101` | Nested Modules | Directory-based organization |
+| `7c46761` | Module Patterns | Index files, clean exports |
+| `90c41db` | JSON Handling | File I/O, data persistence |
+| `d5d1a31` | Utility Module | Built-in Node.js APIs |
+| `0a55e01` | Cryptographic Hashing | `crypto` module basics |
+| `23fb969` | Hash Algorithms | MD5, SHA-1, SHA-256, SHA-512 |
+| `f9862da` | Password Security | PBKDF2, salting, key derivation |
+| `0013b79` | Authentication | Password verification |
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14.0.0 or higher recommended)
+- Basic understanding of JavaScript
+
+### Installation
+
+```bash
+git clone <repository-url>
+cd nodejsPoc
 ```
-   git clone <your-repo-url>
-   cd nodejsPoc
-   
+
+### Running Examples
+
+Execute the main application:
+
+```bash
+node app.js
 ```
 
-2. Run the main application:
+Explore specific modules:
 
-   
-```
-   node app.js
-   
-```
-
-3. Explore other modules:
-
-   
-```
-   node calculate/index.js
-   node PathModule/app.js
-   
+```bash
+node calculate/index.js
+node PathModule/app.js
 ```
 
-## 🔐 Security Note
+## Core Concepts Covered
 
-The project demonstrates password hashing using PBKDF2 with SHA-512. For production applications, it is recommended to use **bcrypt** or **argon2** which provide better security features and are specifically designed for password hashing.
+### Module Systems
 
-## 💡 Key Takeaways
+- **CommonJS**: Traditional Node.js module system using `require()` and `module.exports`
+- **ES Modules**: Modern JavaScript modules using `import` and `export`
+- **Module Resolution**: Understanding how Node.js locates and loads modules
+- **Organizational Patterns**: Structuring code across files and directories
 
-1. **Modules are the building blocks** - Use `module.exports` to share code between files
-2. **CommonJS is the default** - Node.js uses CommonJS by default (`require`/`module.exports`)
-3. **ES Modules are the future** - Use `import`/`export` for modern JavaScript
-4. **Node.js has built-in modules** - Explore crypto, util, fs, path, events, etc.
-5. **Never store plain-text passwords** - Always hash passwords before storing
-6. **Use salt with hashing** - Random salts prevent rainbow table attacks
-7. **More iterations = more secure** - But balance with performance
+### Built-in Modules
 
-## 📖 Further Reading
+- **crypto**: Cryptographic operations and secure hashing
+- **util**: Utility functions for working with Node.js internals
+- **path**: File path manipulation and normalization
+- **fs**: File system operations (demonstrated through JSON handling)
 
-- [Node.js Documentation](https://nodejs.org/docs/)
-- [Node.js Module System](https://nodejs.org/api/modules.html)
-- [Crypto Module](https://nodejs.org/api/crypto.html)
-- [Password Hashing Best Practices](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+### Security Practices
+
+- Password hashing using PBKDF2 with configurable iterations
+- Salt generation for preventing rainbow table attacks
+- Secure password verification
+- Industry best practices for credential storage
+
+## Security Considerations
+
+This project demonstrates password hashing using PBKDF2 with SHA-512. While suitable for educational purposes, production applications should consider:
+
+- **bcrypt**: Purpose-built for password hashing with adaptive cost factors
+- **argon2**: Modern algorithm resistant to GPU-based attacks
+- **scrypt**: Memory-hard algorithm providing additional security
+
+Always use established, well-audited libraries for production authentication systems.
+
+## Educational Objectives
+
+This repository is designed to help developers:
+
+1. Understand Node.js module resolution and organization patterns
+2. Work effectively with both CommonJS and ES Module systems
+3. Leverage Node.js built-in APIs without external dependencies
+4. Implement secure password handling practices
+5. Build a mental model of asynchronous JavaScript execution
+6. Develop clean, maintainable Node.js applications
+
+## Documentation
+
+Each commit in this repository includes detailed markdown documentation in the `commits/` directory, covering:
+
+- Concept introduction and context
+- Code examples with explanations
+- Key takeaways and best practices
+- Common pitfalls and how to avoid them
+
+## Additional Resources
+
+- [Node.js Official Documentation](https://nodejs.org/docs/)
+- [Node.js Module System Guide](https://nodejs.org/api/modules.html)
+- [Crypto Module API Reference](https://nodejs.org/api/crypto.html)
+- [OWASP Password Storage Guidelines](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+
+## License
+
+This project is provided as-is for educational purposes.
 
 ---
 
-Happy Learning! 🚀
+**Note**: This is a learning-focused proof of concept. Code examples prioritize clarity and educational value over production-readiness.
