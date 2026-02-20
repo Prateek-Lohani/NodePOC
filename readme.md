@@ -49,20 +49,20 @@ This repository follows a structured learning approach with each commit introduc
 
 ### Curriculum Overview
 
-| Commit | Topic | Key Concepts |
-|--------|-------|--------------|
-| `f0502d9` | Module Creation | `require()`, `module.exports` |
-| `65a76d8` | Module Interaction | Exporting and importing functions |
-| `138d7f0` | Multiple Exports | Destructuring, named exports |
-| `dc0958f` | ES Modules | `import`/`export` syntax, module types |
-| `7513101` | Nested Modules | Directory-based organization |
-| `7c46761` | Module Patterns | Index files, clean exports |
-| `90c41db` | JSON Handling | File I/O, data persistence |
-| `d5d1a31` | Utility Module | Built-in Node.js APIs |
-| `0a55e01` | Cryptographic Hashing | `crypto` module basics |
-| `23fb969` | Hash Algorithms | MD5, SHA-1, SHA-256, SHA-512 |
-| `f9862da` | Password Security | PBKDF2, salting, key derivation |
-| `0013b79` | Authentication | Password verification |
+| Topic | Key Concepts |
+|-------|--------------|
+| Module Creation | `require()`, `module.exports` |
+| Module Interaction | Exporting and importing functions |
+| Multiple Exports | Destructuring, named exports |
+| ES Modules | `import`/`export` syntax, module types |
+| Nested Modules | Directory-based organization |
+| Module Patterns | Index files, clean exports |
+| JSON Handling | File I/O, data persistence |
+| Utility Module | Built-in Node.js APIs |
+| Cryptographic Hashing | `crypto` module basics |
+| Hash Algorithms | MD5, SHA-1, SHA-256, SHA-512 |
+| Password Security | PBKDF2, salting, key derivation |
+| Authentication | Password verification |
 
 ## Getting Started
 
