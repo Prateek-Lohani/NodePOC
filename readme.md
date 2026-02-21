@@ -34,7 +34,8 @@ nodejsPoc/
 │   ├── 23fb969_common_hash_algorithms.md
 │   ├── f9862da_hashed_password.md
 │   ├── 0013b79_verifying_password.md
-│   └── path_module_basics.md
+│   ├── path_module_basics.md
+│   └── fs_module_basics.md
 ├── calculate/              # Example module demonstrating code organization
 │   ├── index.js
 │   ├── sum.js
