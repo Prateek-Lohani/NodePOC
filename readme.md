@@ -39,8 +39,18 @@ nodejsPoc/
 │   ├── index.js
 │   ├── sum.js
 │   └── multiply.js
-└── PathModule/             # Path module demonstration
-    └── app.js
+├── PathModule/             # Path module demonstration
+│   └── app.js
+└── FSModule/               # File System module demonstrations
+    ├── Callback API/       # Callback-based file operations
+    │   ├── index.js
+    │   └── textFile.txt
+    ├── Promise API/        # Promise-based file operations
+    │   ├── index.js
+    │   └── package.json
+    └── Sync API/           # Synchronous file operations
+        ├── index.js
+        └── textFile.txt
 ```
 
 ## Learning Path
@@ -59,10 +69,14 @@ This repository follows a structured learning approach with each commit introduc
 | Module Patterns | Index files, clean exports |
 | JSON Handling | File I/O, data persistence |
 | Utility Module | Built-in Node.js APIs |
+| Path Module | Path manipulation, normalization |
 | Cryptographic Hashing | `crypto` module basics |
 | Hash Algorithms | MD5, SHA-1, SHA-256, SHA-512 |
 | Password Security | PBKDF2, salting, key derivation |
 | Authentication | Password verification |
+| File System (Callback) | `fs` module, async callbacks |
+| File System (Promise) | `fs/promises`, async/await |
+| File System (Sync) | `fs` module, synchronous operations |
 
 ## Getting Started
 
@@ -73,7 +87,8 @@ This repository follows a structured learning approach with each commit introduc
 
 ### Installation
 
-```bash
+```
+bash
 git clone <repository-url>
 cd nodejsPoc
 ```
@@ -82,15 +97,34 @@ cd nodejsPoc
 
 Execute the main application:
 
-```bash
+```
+bash
 node app.js
 ```
 
 Explore specific modules:
 
-```bash
+```
+bash
 node calculate/index.js
 node PathModule/app.js
+```
+
+Explore File System operations:
+
+```
+bash
+# Promise API examples (requires Node.js v14.14+)
+cd "FSModule/Promise API"
+node index.js
+
+# Callback API examples
+cd "FSModule/Callback API"
+node index.js
+
+# Sync API examples
+cd "FSModule/Sync API"
+node index.js
 ```
 
 ## Core Concepts Covered
@@ -107,7 +141,7 @@ node PathModule/app.js
 - **crypto**: Cryptographic operations and secure hashing
 - **util**: Utility functions for working with Node.js internals
 - **path**: File path manipulation and normalization
-- **fs**: File system operations (demonstrated through JSON handling)
+- **fs**: File system operations (Callback API, Promise API, and Sync API)
 
 ### Security Practices
 
@@ -136,6 +170,7 @@ This repository is designed to help developers:
 4. Implement secure password handling practices
 5. Build a mental model of asynchronous JavaScript execution
 6. Develop clean, maintainable Node.js applications
+7. Work with File System operations using Callback, Promise, and Sync APIs
 
 ## Documentation
 
@@ -151,11 +186,8 @@ Each commit in this repository includes detailed markdown documentation in the `
 - [Node.js Official Documentation](https://nodejs.org/docs/)
 - [Node.js Module System Guide](https://nodejs.org/api/modules.html)
 - [Crypto Module API Reference](https://nodejs.org/api/crypto.html)
+- [File System Module Reference](https://nodejs.org/api/fs.html)
 - [OWASP Password Storage Guidelines](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
-
-## License
-
-This project is provided as-is for educational purposes.
 
 ---
 
