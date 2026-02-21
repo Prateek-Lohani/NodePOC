@@ -10,7 +10,7 @@ fs.mkdir("c:\\nodejs\\newFolder\\ChildFolder", { recursive: true }, (error) => {
 
 // ****************** Reading content
 
-fs.readdir("C:\\nodejs", (error, files) => {
+fs.readdir("nC:\\nodejs", (error, files) => {
     if(error) console.log(error)
 
   for (let file of files) {
